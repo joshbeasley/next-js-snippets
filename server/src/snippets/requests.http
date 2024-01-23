@@ -1,0 +1,25 @@
+### Create Snippet
+POST http://localhost:8443/snippets
+Content-Type: application/json
+
+{
+  "title": "this is the title",
+  "code": "print('hello world')"
+}
+
+### Find a particular snippet
+GET http://localhost:8443/snippets/1
+
+### Find all snippets
+GET http://localhost:8443/snippets
+
+### Delete user with a given id
+DELETE http://localhost:8443/snippets/1
+
+### Delete user with a given id
+PATCH http://localhost:8443/snippets/2
+Content-Type: application/json
+
+{
+  "code": "console.log('hello world')"
+}

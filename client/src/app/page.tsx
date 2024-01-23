@@ -1,9 +1,11 @@
 import { db } from '@/db'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Snippet, snippetsBaseURL } from '@/resources'
 
 export default async function Home() {
-  const snippets = await db.snippet.findMany()
+  const res = await fetch(snippetsBaseURL)
+  const snippets: Snippet[] = await res.json()
 
   const renderedSnippets = snippets.map((snippet) => {
     return (
