@@ -1,6 +1,5 @@
 'use server'
 
-import { db } from '@/db'
 import { snippetsBaseURL } from '@/resources'
 import { revalidatePath } from 'next/cache'
 import { notFound, redirect } from 'next/navigation'

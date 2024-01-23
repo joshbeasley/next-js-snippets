@@ -1,5 +1,4 @@
 import SnippetEditForm from '@/components/snippet-edit-form'
-import { db } from '@/db'
 import { snippetsBaseURL } from '@/resources'
 import { Snippet } from '@prisma/client'
 import { notFound } from 'next/navigation'
@@ -23,6 +22,7 @@ export default async function SnippedEditPage({
 
   return (
     <div className='mt-10'>
+      <h1 className='text-lg text-bold mb-2'>Edit Code Snippet</h1>
       <SnippetEditForm snippet={snippet} />
     </div>
   )

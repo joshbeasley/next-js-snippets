@@ -1,5 +1,3 @@
-import { db } from '@/db'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Snippet, snippetsBaseURL } from '@/resources'
 

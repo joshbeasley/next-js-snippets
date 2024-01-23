@@ -1,5 +1,4 @@
 import { deleteSnippet } from '@/actions'
-import { db } from '@/db'
 import { snippetsBaseURL } from '@/resources'
 import { Snippet } from '@prisma/client'
 import Link from 'next/link'
